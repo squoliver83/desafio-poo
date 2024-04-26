@@ -1,6 +1,6 @@
 package model;
 
-public class AparelhoCelular implements ReprodutorMusical, AparelhoTelefonico {
+public class AparelhoCelular implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
 
     private String modelo;
     private String marca;
@@ -80,5 +80,20 @@ public class AparelhoCelular implements ReprodutorMusical, AparelhoTelefonico {
     @Override
     public void iniciarCorreioVoz() {
         System.out.println("Iniciando correio de voz...");
+    }
+
+    @Override
+    public void exibirPagina() {
+        System.out.println("Abrindo página...");
+    }
+
+    @Override
+    public void adicionarNovaAba() {
+        System.out.println("Adicionando novo aba...");
+    }
+
+    @Override
+    public void atualizarPagina() {
+        System.out.println("Atualizando página...");
     }
 }
